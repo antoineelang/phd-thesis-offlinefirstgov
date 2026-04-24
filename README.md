@@ -17,6 +17,22 @@ To move beyond stochastic `SimPy` outcomes and bridge the gap to physical deploy
 
 To guarantee exact physical reproducibility, the hardware architecture is strictly divided into three operational zones.
 
+<div align="center">
+  <img src="fig6.png" alt="Physical Hardware Testbed Architecture" width="80%">
+</div>
+<br>
+<em>Fig. 6. Physical Hardware Testbed Architecture. The setup physically isolates the L2 Sequencer (ARM-class edge hardware) from the L1 Mainnet (ZFS storage backend), utilizing a network emulator to forcefully inject intermittent 2G/Edge connectivity drops.</em>
+
+<br><br>
+
+<div align="center">
+  <img src="fig7.png" alt="Hardware architecture schematic" width="80%">
+</div>
+<br>
+<em>Fig. 7. Hardware architecture schematic of the testbed simulating the Liveness Trap and asynchronous state reconciliation.</em>
+
+<br><br>
+
 | Component | Function in Architecture |
 | :--- | :--- |
 | **Raspberry Pi 4 Model B (4GB)** | L2 Sequencer (CPU Compute, Python Daemon, VDF) |
