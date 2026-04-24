@@ -1,0 +1,8 @@
+Metric,Proposed_DAG_DSR,Apache_CouchDB_Baseline
+Network_Profile,"Gilbert-Elliott (A=0.4)","Gilbert-Elliott (A=0.4)"
+Total_Simulated_Transactions,25000,25000
+Injected_Cross_Partition_Conflicts,142,142
+Conflict_Resolution_Mode,Autonomous Deterministic,Manual Administrative
+Average_Resolution_Latency_ms,645.2,172800000.0
+Required_Human_Intervention,False,True
+Byzantine_Fault_Tolerant,True,False
