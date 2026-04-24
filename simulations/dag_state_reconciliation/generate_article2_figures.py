@@ -10,9 +10,13 @@ import matplotlib.dates as mdates
 # Generates Simulation A, B, C, D and Threat Models 1, 2, 3
 # =====================================================================
 
-# Ensure output directory exists
-OUTPUT_DIR = "../../manuscript_figures"
+# Get the exact absolute path of this script, then create the folder right next to it
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "generated_figures")
+
+# Safely create the directory
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+print(f"Saving figures to: {OUTPUT_DIR}")
 
 def plot_sim_a_uptime():
     # --- 1. Simulation Parameters ---
