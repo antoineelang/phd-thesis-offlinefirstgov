@@ -5,26 +5,26 @@ This branch contains the physical testbed logs, the INT8 AI orchestrator logic, 
 ## 🧠 System Architecture & AI Framework
 
 <div align="center">
-  <img src="fig1.png"" alt="L2 Architecture" width="85%">
+  <img src="fig3.png"" alt="L2 Architecture" width="85%">
 </div>
 <br>
-<em>Fig. 1. Software and hardware architecture of the decentralized L2 Sequencer. The Python AI agent acts as the supervisor (Orchestrator) dictating the execution pace of the Rust cryptographic engine based on the sensed physical constraints.</em>
+<em> Software and hardware architecture of the decentralized L2 Sequencer. The Python AI agent acts as the supervisor (Orchestrator) dictating the execution pace of the Rust cryptographic engine based on the sensed physical constraints.</em>
 
 <br><br>
 
 <div align="center">
-  <img src="fig2.png" alt="DQN Topology" width="70%">
+  <img src="fig1.png" alt="DQN Topology" width="70%">
 </div>
 <br>
-<em>Fig. 2. Topology of the Lightweight Deep Q-Network (DQN) deployed on the edge node (4-32-16-3 architecture).</em>
+<em> Topology of the Lightweight Deep Q-Network (DQN) deployed on the edge node (4-32-16-3 architecture).</em>
 
 <br><br>
 
 <div align="center">
-  <img src="fig3.png" alt="Training Convergence" width="85%">
+  <img src="fig2.png" alt="Training Convergence" width="85%">
 </div>
 <br>
-<em>Fig. 3. DQN Training Convergence (Offline Phase 1). The dual-axis graph illustrates the learning curve over 5,000 simulated episodes, showing the inverse relationship between the decaying exploration rate (ε) and the stabilizing cumulative reward.</em>
+<em>DQN Training Convergence (Offline Phase 1). The dual-axis graph illustrates the learning curve over 5,000 simulated episodes, showing the inverse relationship between the decaying exploration rate (ε) and the stabilizing cumulative reward.</em>
 
 <br><br>
 ## 📂 Repository Structure
