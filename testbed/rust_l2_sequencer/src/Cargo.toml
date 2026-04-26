@@ -1,0 +1,15 @@
+[package]
+name = "edge_l2_sequencer"
+version = "1.0.0"
+edition = "2021"
+authors = ["Antoine Elang <your.email@example.com>"]
+description = "Lightweight Layer 2 Sequencer for Constrained Environments (DAG-DSR)"
+
+[dependencies]
+# Cryptographic hashing for the Merkle Tree
+sha2 = "0.10.8"
+# Serialization for the 52KB payload
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Lightweight async runtime for the RPC listener
+tokio = { version = "1.32", features = ["full"] }
